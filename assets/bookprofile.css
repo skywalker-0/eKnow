@@ -1,0 +1,107 @@
+.bookprofilecontainer .imagewrapper{
+    height: 250px;
+    width: 100%;
+    background: url("images/bookbackground2.jpg");
+}
+
+.bookprofilecontainer .bookprofile{
+    width: 90%;
+    margin: auto;
+    margin-top: -150px;
+    box-shadow: 7px 7px 17px grey;
+    height: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    font-size: 18px;
+}
+
+.bookprofilecontainer .bookprofile .bookcover{
+    height: 100%;
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookprofilecontainer .bookprofile .bookcover img{
+
+    width: 70%;
+    height: auto;
+    margin: 50px 0px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 17px grey;
+}
+
+.bookprofilecontainer .bookprofile .bookcover button{
+   
+    background-color: #05386B;
+    color: white;
+    margin: 8px;
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #05386B;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.bookprofilecontainer .bookprofile .information{
+    height: 100%;
+    border: 1px solid black;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+.bookprofilecontainer .bookprofile .information .titleinfo{
+    
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    flex: 2;
+    border: 1px solid black;
+
+}
+
+.bookprofilecontainer .bookprofile .information .titleinfo h1{
+    font-size: 2em;
+    font-weight: 100;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #05386B;
+}
+
+.bookprofilecontainer .bookprofile .information .titleinfo p{
+    margin: 20px 0px;
+}
+
+.bookprofilecontainer .bookprofile .information .titleinfo ul li{
+    font-size: 18px;
+    list-style-type: none;
+}
+
+
+.bookprofilecontainer .bookprofile .information .titleinfo ul{
+    margin-bottom: 20px;
+}
+
+.checked{
+    color: orange;
+}
+.bookprofilecontainer .bookprofile .information .stats{
+
+    flex: 1;
+    border: 1px solid black;
+
+}
+
+.bookprofilecontainer .bookprofile .information .description{
+    
+    flex: 3;
+    border: 1px solid black;
+}
+

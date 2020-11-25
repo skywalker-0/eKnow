@@ -1,0 +1,156 @@
+.aboutus{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aboutus .img-wrapper{
+
+    width: 100%;
+    height: 250px;
+    background-image: url("images/svg/Large-Triangles-purple.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.aboutus .info{
+   margin: 100px;
+   margin-top: -100px;
+    background-color: white;
+    box-shadow: 5px 5px 25px grey;
+    border-radius: 10px;
+}
+
+
+.aboutus .info .intro{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 50px;
+    grid-gap: 20px;
+} 
+
+.aboutus .info .intro h1{
+    font-size: 36px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    color: #05386B;
+    border-bottom: 1px solid #05386B;
+}
+
+.aboutus .info .intro p{
+
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+    
+}
+.aboutus .info .intro .img-wrapper{
+    background-image: none;
+}
+.aboutus .info .intro .img-wrapper img{
+
+    width: 60%;
+    margin-left: 100px;
+    height: auto;
+   
+  
+}
+
+
+
+/*-------------------------------------------------*/
+
+.profilepic img{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0px 30px;
+
+}
+
+.f{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.designers{
+    margin: 50px;
+    margin-top: 100px;
+}
+
+.designers h1{
+    font-size: 36px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    color: #05386B;
+    border-bottom: 1px solid #05386B;
+}
+
+.designers p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+    color: rgb(70, 69, 69);
+    margin: 0px 30px;
+}
+
+.designers .fwrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    background-color: #EDF5E1;
+}
+
+
+
+/*----------------------------------------------------------*/
+
+@media(max-width:500px){
+    .aboutus .info .intro .img-wrapper{
+        display: none;
+    }
+
+    .designers .fwrapper .f{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .aboutus .info{
+        margin: 20px;
+        margin-top: -50px;
+    }
+
+    .aboutus .img-wrapper{
+        height: 100px;
+    }
+
+    
+   .aboutus .info .intro{
+    margin: 5px;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    }
+
+    .aboutus .info .intro h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .designers h1{
+        font-size: 30px;
+    }
+
+    .designers p{
+        text-align: left;
+    }
+
+}

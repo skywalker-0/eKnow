@@ -1,0 +1,159 @@
+.logo-wrapper img{
+    
+    height: 125%;
+    width: 70%;
+    margin: 10px;
+    margin-left: 50px;
+    margin-top: -7px;
+}
+
+.header
+{
+    display: flex;
+    background-color: white;
+    height: 60px;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px rgb(75, 75, 75);
+    z-index: +1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+
+.header .menu-wrapper ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 70px;
+}
+
+.header .menu-wrapper ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 10px 20px;
+    font-size: 1.3em;
+    color: gray;
+    padding-bottom: 5px;
+    transition: 0.8s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.header .menu-wrapper ul li button{
+    display:inline-block;
+    background-color: white;
+     font-size: 90%;
+     border:none;
+     color: black;
+    margin: 10px 20px;
+    font-size: 1.3em;
+    color: gray;
+    padding-bottom: 5px;
+     text-decoration: none;
+     transition: 0.8s ease;
+    border-bottom: 2px solid transparent;
+
+}
+
+.header .menu-wrapper ul li img{
+    width: 40px;
+    height: auto;
+    border: 1px solid #05386B;
+    border-radius: 50%;
+    display: none;
+}
+
+.header .menu-wrapper ul li:hover a{
+   color: black;
+   border-bottom: 2px solid black;
+   
+}
+
+.menu-btn{
+   display: none;
+   position: absolute;
+   top: 20px;
+   right: 30px;
+}
+
+#active{
+    color: black;
+    border-bottom: 2px solid black;
+    
+}
+
+.hamburgerbar{
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 15px;
+    display: none;
+    z-index: 2;
+}
+
+.hamburgerbar:hover{
+    opacity: 0.6;
+}
+
+
+
+
+/* Media queries */
+
+@media(max-width:500px){
+    .menu-wrapper{
+       position: absolute;
+      
+       z-index: +2;
+       top: 0;
+       left: 0;
+       background-color: white;
+       height: 1000px;
+       width: 60%;
+       transform: translateX(-500px);
+       padding: 40px;
+       opacity: 0.9;
+       transition: transform 0.5s ease-in-out;
+      
+    }
+
+
+
+    .show{
+        transform: translateX(-20px);
+    }
+
+    .header .menu-wrapper ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header .menu-wrapper ul li{
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        border-bottom:1px solid #ccc ;
+    }
+
+    .header .menu-wrapper ul li a{
+        color: black;
+        font-size: 20px;
+    }
+
+    #active{
+        color: white;
+        padding: 5px 10px;
+        background-color: black;
+        border-radius: 15px;
+    }    
+
+    .hamburgerbar{
+        display: inline-block;
+    }
+
+    .logo-wrapper img{
+        height: 70%;
+        width: auto;
+        margin-left: 20px;
+        
+    }
+}

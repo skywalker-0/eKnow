@@ -1,0 +1,225 @@
+
+.searchresult{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    color: rgb(63, 63, 63);
+}
+
+
+
+.titlewrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.titlewrapper h1{
+    font-size: 1.6em;
+   
+}
+
+.titlewrapper .sortby{
+    display: flex;
+    list-style-type: none;
+}
+
+.titlewrapper .sortby .active{
+    background-color: rgb(185, 185, 185);
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+
+.titlewrapper .sortby li,p{
+  margin: 0px 20px;
+  font-size: 20px;
+}
+
+
+/*-----------bool result--------------------*/
+
+
+             .books_result
+               {
+        
+                   display: flex;
+                  flex-wrap: wrap;
+               }
+
+               
+
+               .result{
+               
+                   height: 200px;
+                   width: 47%;
+                   border: 1px solid  rgb(177, 176, 176);
+                   margin: 10px;
+                   
+                   padding: 10px;
+               }
+
+               .result img{
+                box-shadow: 5px 5px 5px rgb(197, 197, 197);
+                   height: 180px;
+                   width: auto;
+                   float: left;
+                   margin-right: 20px;
+               }
+
+               .result h1{
+                   font-size: 20px;
+                   padding: 10px;
+               }
+
+
+
+
+    .advancesearch button{
+    border-radius: 15px;
+    width: 25%;
+    background-color:#05386B;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 100;
+    }
+
+
+    .advancesearchform{
+        display: none;
+        width: 90%;
+        margin: 40px auto;
+
+        padding: 50px;
+        box-shadow: 5px 5px 20px grey;
+        border-radius: 10px;
+    }
+
+    .advancesearchform table{
+        width: 60%;
+    }
+
+    .advancesearchform h1{
+        font-size: 30px;
+        font-size: 36px;
+        font-weight: 100;
+        color: #05386B;
+        border-bottom: 1px solid #05386B;
+    }
+
+    .advancesearchform p{
+      margin: 20px 0px; 
+       
+    }
+
+    .advancesearchform input{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px;
+    width: 100%;
+    }
+
+    .advancesearchform input:focus{
+        border: 2px solid blue;
+    }
+
+    .advancesearchform button{
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 100;
+    border: 1px solid #05386B;
+    background-color: #05386B;
+    color: white;
+    border-radius: 5px;
+    width: 20%;
+    }
+
+
+
+    /*-------next pages-------*/
+
+    .nextpages{
+        display: flex;
+        list-style-type: none;
+        margin: 40px;
+        justify-content: center;
+    }
+
+    .nextpages li a{
+        margin: 20px;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .nextpages li a.active{
+        border: 1px solid #05386B;
+        background-color: #05386B;
+        border-radius: 50%;
+        color: white;
+        padding: 5px 10px;
+    }
+
+
+
+    /*---Media queries--------*/
+
+    @media (max-width:500px)
+    {
+        .sortby{
+            flex-direction: column;
+        }
+
+        
+        .result{
+               
+           width: 100%;
+           height: auto;
+            border: 1px solid  rgb(177, 176, 176);
+            margin: 5px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+        }
+
+        .result img{
+            height: auto;
+            width: 60%;
+            margin: auto;
+        }
+        
+       .advancesearch button{
+            width: 90%;
+       }
+
+
+       .advancesearchform{
+        display: none;
+        width: 95%;
+        margin: 40px auto;
+
+        padding: 20px;
+    
+        }
+
+        .advancesearchform table{
+            width: 100%;
+        }
+
+        .advancesearchform input{
+            font-size: 16px;
+        }
+
+        .advancesearchform button{
+            width: 60%;
+        }
+
+    }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'><link rel="stylesheet" href="/assets/loginstyle.css">
+
+
+<meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href='https://fonts.googleapis.com/css?family=tittilium' rel='stylesheet'>
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+         <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
+         <link rel="stylesheet" href="/assets/header.css">
+         <link rel="stylesheet" href="/assets/footer.css">
+         <link rel="stylesheet" href="/assets/showcase.css">
+         <link rel="stylesheet" href="/assets/homecards.css">
+         <link rel="stylesheet" href="/assets/offer.css">
+         <link rel="stylesheet" href="/assets/webfeatures.css">
+         <script defer src="/assets/javascript/index.js"></script>
+         <script defer src="/assets/javascript/header.js"></script>
+</head>
+<body>
+
+  <!--header-->
+          
+  <section class="header">
+    <section class="hamburgerbar">
+      <i class="fa fa-bars fa-2x"></i>
+     </section>
+      <section class="logo-wrapper">
+
+          <img src="/assets/Images/Logo/eknow.png" alt="Bookx.com">
+
+      </section>
+
+      <section class="menu-wrapper">
+          <ul>
+              <li ><a href="/" id="active" >Home</a></li>
+              <li><a href="/register">Register</a></li>
+              <li><a href="/aboutus">About us</a></li>
+          </ul>
+
+      </section>
+  </section>
+
+<!-- partial:index.partial.html -->
+<div class="container">
+      
+  <form method="POST" action="/login" enctype="multipart/form-data">
+    <div class="row">
+      <h4>Login</h4>
+       
+
+
+      <div class="input-group input-group-icon">
+        <input type="email" name="email" placeholder="Email Address" required/>
+        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+      </div>
+
+
+      <div class="input-group input-group-icon">
+        <input type="password" name="password" placeholder="Password" required/>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+    
+      </div>
+
+    
+
+
+    
+    
+      
+      <div class="row">
+    <input type="submit"  value="GET STARTED">
+     </div>
+  
+   
+       
+  </form>
+  <% if(typeof (msg) !== 'undefined') { %>
+    <p><%= msg %></p>
+    <% } %>
+</div>
+
+
+
+<section class="footer">
+  <section class="social_links">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+  </section>
+  <section class="f_info">
+      <section class="f_info1">
+      <h1>e-know</h1>
+      <h1>About Us</h1>
+      <span>Our website provides best user friendly tools for online education</span>
+      <br>
+      <br>
+      <h1>Contact Us</h1>
+      <i class="fa fa-phone" style="margin-right: 10px"></i>&nbsp;<span>+919974435875</span>
+      <br>
+      <i class="fa fa-envelope" style="margin-right: 10px"></i>&nbsp;<span>201912006@gmail.com</span>
+
+      </section>
+      <section class="f_info2">
+      <h1>Information</h1>
+      
+          <a href="#">Feedback</a>
+          <br>
+          <a href="#">Report Bug</a>
+          <br>
+          <br>
+
+          <h1>Helpful Links</h1>
+      
+          <a href="#">Support</a>
+          <br>
+          <a href="#">Terms & Conditions</a>
+          <br>
+          <a href="#">Privacy Policy</a>
+          <br>
+      </section>
+      <section class="newslatter">
+      <h1>Newsletter Subscription</h1>
+      <input type="email" placeholder="Your E-mail Address">
+      <br>
+      <button onclick="subscribe()">Subscribe</button>
+      </section>
+  </section>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

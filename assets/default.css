@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Lato",Arial, Helvetica, sans-serif;
+}
+
+.container{
+    position: relative;
+    margin: 0;
+    
+}
+
+.btn:hover{
+    background-color: rgb(7, 89, 172);
+}
+
+
+
+
+

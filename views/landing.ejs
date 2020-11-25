@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home page</title>
+       <!-- <style>
+            html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background:  #643986;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: center;
+}
+
+h1 {
+  color: #f1c40f;
+  font-size: 4rem;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+p {
+  color: #f1c40f;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 3em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.third {
+  border-color: yellow;
+  color: #fff;
+  box-shadow: 0 0 40px 40px yellow inset, 0 0 0 0 yellow;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 yellow inset, 0 0 10px 4px yellow;
+}
+.third:hover a{
+    color: cornsilk;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+        </style>-->
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href='https://fonts.googleapis.com/css?family=tittilium' rel='stylesheet'>
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+         <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
+         <link rel="stylesheet" href="/assets/default.css">
+         <link rel="stylesheet" href="/assets/header.css">
+         <link rel="stylesheet" href="/assets/footer.css">
+         <link rel="stylesheet" href="/assets/showcase.css">
+         <link rel="stylesheet" href="/assets/homecards.css">
+         <link rel="stylesheet" href="/assets/offer.css">
+         <link rel="stylesheet" href="/assets/webfeatures.css">
+         <script defer src="/assets/javascript/index.js"></script>
+         <script defer src="/assets/javascript/header.js"></script>
+    </head>
+    <body>
+      <section class="container">
+
+        <section class="menu-btn">
+          <i class="fa fa-bars fa-2x"></i>
+        </section>
+  
+          <!--header-->
+          
+          <section class="header">
+            <section class="hamburgerbar">
+              <i class="fa fa-bars fa-2x"></i>
+             </section>
+              <section class="logo-wrapper">
+  
+                  <img src="/assets/Images/Logo/eknow.png" alt="Bookx.com">
+  
+              </section>
+  
+              <section class="menu-wrapper">
+                  <ul>
+                      <li ><a href="/" id="active" >Home</a></li>
+
+                      <% if(typeof (userid) === 'undefined') { %>
+                      <li><a href="/register">Register</a></li>
+                      <li><a href="/login">Log In</a></li>
+                      <li><a href="/aboutus">About us</a></li>
+
+                      <% } else { %>
+                        <li><a href="/"><%= username %></a></li>
+                        <li ><a href="/dashboard/<%= userid %>" id="active" >my classes</a></li>
+                        <li><a href="/aboutus">About us</a></li>
+                        <li>
+                          <form action="/logout" method="POST" style="margin-top: -12px;">
+                            <button>Logout</button></form>
+                          </li>
+                        <% } %>
+                      
+                  </ul>
+  
+              </section>
+          </section>
+  
+  
+  
+          <!--showcase-->
+  
+          <section class="showcase" >
+              <section class="content">
+                  <p>Your very own online e-learning class</p>
+                  <br>
+                  <p>e-edu is an education network that helps connect all learners with the people and resources needed to reach their full potential.</p>
+                  <br>
+                  <p>---Now with the feature of anonymous questions---</p>
+  
+                  
+                 
+              </section>
+          </section>
+  
+          
+          <!--webfeatures showcase-->
+         
+          <section class="webfeatures">
+             <section class="feature">
+            <section class="info">
+  
+              <h1>Want to learn more at the comfort of your place </h1>
+              <br><br>
+              <p>e-edu is an all-in-one solution for distance learning and hybrid learning with tools that teachers need and anonymous questions section for increased interactivity</p>
+              
+            </section>
+  
+            <section class="img-wrapper">
+                 <img src="/assets/Images/svg/undraw_reading_0re1.svg">
+            </section>
+          </section>
+  
+          <section class="feature">
+            <section class="img-wrapper">
+              <img src="/assets/Images/svg/undraw_book_lover_mkck.svg">
+  
+            </section>
+  
+            <section class="info">
+              <h1>No need to carry heavy books all the time</h1>
+              <br><br>
+              <p>Send messages, share class materials, and make learning accessible anywhere. Save yourself time by bringing all your classroom tools together.</p>
+              
+            </section>
+          </section>
+  
+            </section>
+  
+        <!--<h1>welcome to this online learning tool</h1>
+        <button class="btn third"><a href="/login">login</a></button>
+        <button class="btn third"><a href="/register">register</a></button>-->
+
+
+        <section class="footer">
+          <section class="social_links">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-twitter"></i>
+          </section>
+          <section class="f_info">
+              <section class="f_info1">
+              <h1>e-know</h1>
+              <h1>About Us</h1>
+              <span>Our website provides best user friendly tools for online education</span>
+              <br>
+              <br>
+              <h1>Contact Us</h1>
+              <i class="fa fa-phone" style="margin-right: 10px"></i>&nbsp;<span>+919974435875</span>
+              <br>
+              <i class="fa fa-envelope" style="margin-right: 10px"></i>&nbsp;<span>201912006@gmail.com</span>
+        
+              </section>
+              <section class="f_info2">
+              <h1>Information</h1>
+              
+                  <a href="#">Feedback</a>
+                  <br>
+                  <a href="#">Report Bug</a>
+                  <br>
+                  <br>
+        
+                  <h1>Helpful Links</h1>
+              
+                  <a href="#">Support</a>
+                  <br>
+                  <a href="#">Terms & Conditions</a>
+                  <br>
+                  <a href="#">Privacy Policy</a>
+                  <br>
+              </section>
+              <section class="newslatter">
+              <h1>Newsletter Subscription</h1>
+              <input type="email" placeholder="Your E-mail Address">
+              <br>
+              <button onclick="subscribe()">Subscribe</button>
+              </section>
+          </section>
+        </section>
+
+  </section>
+    </body>
+</html>

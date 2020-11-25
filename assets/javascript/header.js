@@ -1,0 +1,1 @@
+document.querySelector('.hamburgerbar').addEventListener('click', ()=> document.querySelector('.menu-wrapper').classList.toggle('show'));

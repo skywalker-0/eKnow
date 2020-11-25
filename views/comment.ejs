@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        comment page
+    </title>
+
+    <style>
+    .img-wrapper{
+
+      width: 100%;
+      height: 150px;
+      background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);      background-repeat: no-repeat;
+      background-size: cover;
+  
+  }
+
+  #comments-tit{
+    margin-top: -100px;
+     color: white;
+     font-size: xx-large;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     margin-left: 17%;
+     text-decoration: underline;
+  }
+
+  .to-middle{
+    margin-left: 20%;
+
+  }
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/feedstyle1.css">
+<link rel="stylesheet" href="/assets/feedstyle2.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+
+
+        </head>
+        <body>
+          <section class="img-wrapper">
+          </section>
+
+          <h6 id="comments-tit" >Comments</h6>
+          <div class="w3-col m7 to-middle">
+    
+            <div class="w3-row-padding" style="margin-top: 10%;">
+              <div class="w3-col m12">
+                <div class="w3-card w3-round w3-white">
+                  <div class="w3-container w3-padding">
+                    
+                    <form method="POST" action="/comment/<%= id %>"  style="margin-top: 2%; margin-left: 5%;" >
+                      <textarea name="content" placeholder="Write anonymous comment here" rows="5" cols="80" required></textarea>
+                        <br>
+                     
+                        <br>
+                      <input type="submit" value="POST" class="w3-button w3-theme" >
+                   </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- <p><%= id %></p>--> 
+             <% if(typeof (data[0]) !== undefined) { %>   
+
+                <% data.forEach(function(item){ %>
+
+                    <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                     <br>
+                     
+                
+                        <p><%= item.comment %></p>
+                        <!--<p><%= item.comment_count %></p>-->
+                        
+                       
+                        
+                      </div> 
+
+                    <%  }); %>
+                    <% } %>
+
+          </div>
+        </body>
+        </html>

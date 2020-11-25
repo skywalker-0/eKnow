@@ -1,0 +1,37 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 15%;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login h1{
+    font-size: 1.9em;
+    font-weight: 100;
+    color: black;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.login input{
+    border: none;
+    border-bottom: 1px solid grey;
+    margin: 30px 20px;
+    width: 80%;
+}
+
+.login-btn {
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: purple;
+    color: white;
+}

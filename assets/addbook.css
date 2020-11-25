@@ -1,0 +1,124 @@
+.addbookcontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.addbookcontainer .img-wrapper{
+
+    width: 100%;
+    height: 200px;
+    background-image: url("images/svg/Large-Triangles-purple.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.addbookcontainer .info{
+    margin: 100px;
+    margin-top: -100px;
+     background-color: white;
+     box-shadow: 5px 5px 25px grey;
+     border-radius: 10px;
+     
+ }
+
+
+
+ .Addbookform{
+    
+    padding: 20px;
+}
+
+
+.Addbookform input{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px;
+    width: 100%;
+}
+
+
+
+.Addbookform h1{
+    font-size: 30px;
+    margin: 40px;
+    font-size: 36px;
+    font-weight: 100;
+    color: #05386B;
+    border-bottom: 1px solid #05386B;
+}
+ 
+.Addbookform p{
+    margin:  0px 40px;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+
+}
+
+
+.Addbookform form{
+    margin: 10px 40px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#PDF01,#JPG01{
+    border: none;
+}
+
+input:focus{
+
+    border: 2px solid blue;
+
+}
+
+#submitbtn{
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 100;
+    border: 1px solid #05386B;
+    background-color: #05386B;
+    color: white;
+}
+
+
+
+/*-----------------------------*/
+
+@media (max-width:500px)
+{
+    .addbookcontainer .info
+    {
+        width: 90%;
+        margin: 10px auto;
+       
+    }
+
+    .Addbookform{
+        padding: 0px;
+    }
+
+    .Addbookform input{
+        margin: 10px 0px;
+        font-size: 18px;
+    }
+
+    .addbookcontainer .img-wrapper{
+        height: 100px;
+    }
+
+    .Addbookform h1{
+        font-size: 25px;
+    }
+
+    .Addbookform p{
+        font-size: 18px;
+        text-align: left;
+    }
+}
